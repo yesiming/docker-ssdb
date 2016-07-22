@@ -4,7 +4,7 @@
 
 Dockerfile for [SSDB](https://github.com/ideawu/ssdb).
 
-Configuration parameters modified: `work_dir`, `pidfile` and `logger:level`.
+Custom configuration parameters: `work_dir`, `pidfile` and `logger:level`.
 
 ## Installation
 
