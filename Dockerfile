@@ -7,8 +7,7 @@ RUN apk add --no-cache --upgrade --virtual .build-deps autoconf g++ gcc git make
   && git clone --depth 1 https://github.com/ideawu/ssdb.git /usr/src/ssdb \
   && make -C /usr/src/ssdb \
   && make -C /usr/src/ssdb install \
-  && rm -rf /usr/src/ssdb \
-  && apk del .build-deps
+  && rm -rf /usr/src/ssdb
 
 COPY ssdb.conf /usr/local/ssdb/ssdb.conf
 
